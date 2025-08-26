@@ -1,0 +1,17 @@
+{
+    "name": "my-stackblitz-project",
+    "private": false,
+    "version": "1.0.0",
+    "scripts": {
+      "stackblitz:start": "cd react-version && npm install && npm run dev"
+    },
+    "stackblitz": {
+      "installDependencies": false,
+      "startCommand": "echo 'hi'",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "compileTrigger": "auto"
+    }
+  }
+  
