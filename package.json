@@ -1,5 +1,5 @@
 {
-    "name": "my-stackblitz-project",
+    "name": "react-training",
     "private": false,
     "version": "1.0.0",
     "scripts": {
@@ -7,7 +7,7 @@
     },
     "stackblitz": {
       "installDependencies": false,
-      "startCommand": "echo 'hi'",
+      "startCommand": "cd react-version && npm i && npm run dev",
       "env": {
         "NODE_ENV": "development"
       },
