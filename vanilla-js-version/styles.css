@@ -1,0 +1,48 @@
+/* Custom styles for smooth animations */
+.modal-overlay {
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    transition: transform 0.3s ease;
+}
+
+.character-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.delete-btn {
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Responsive Button Text - Custom CSS Fallback */
+.mobile-text {
+    display: block;
+}
+
+.desktop-text {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .mobile-text {
+        display: none;
+    }
+    
+    .desktop-text {
+        display: block;
+    }
+}
