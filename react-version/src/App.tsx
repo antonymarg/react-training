@@ -6,6 +6,7 @@ import { EmptyState } from "./components/layout/EmptyState";
 import { CharacterGrid } from "./components/character/CharacterGrid";
 import type { Character } from "./lib/types";
 import { seedCharacters } from "./lib/seed";
+import { Counter } from "./components/ui/Counter";
 
 export default function App() {
   const [characters, setCharacters] = useState<Character[]>([]);
@@ -71,6 +72,10 @@ export default function App() {
               onDeleteCharacter={handleDeleteCharacter}
             />
           )}
+          <Counter 
+            initialValue={0}
+            label="Test Counter" 
+          />
         </main>
       </div>
     </>
